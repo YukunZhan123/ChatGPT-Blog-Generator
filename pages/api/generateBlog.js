@@ -32,7 +32,7 @@ export default withApiAuthRequired(async function handler(req, res) {
         {
           role: "system",
           content:
-            "You are an SEO friendly blog post generator called BlogGenerator. You are designed to output markdown without frontmatter.",
+            "You are an SEO friendly blog post generator called BlogGenerator. You are designed to output markdown(limited to markdown types for the following HTML tags: p, h1, h2, h3, h4, h5, h6, strong, i, ul, li, ol) without frontmatter.",
         },
         {
           role: "user",
